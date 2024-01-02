@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.myapp.fragment.Fragment_home
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.example.myapp.coordinator.dataCoordinator.sampleAPI
+//import com.example.myapp.coordinator.dataCoordinator.sampleAPI
 
 
 class MainActivity : AppCompatActivity() {
@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun LOAD_FRAGMENT(fragment: Fragment) {
-        sampleAPI(
-            email= "khoa@gmail.com",
-            onSuccess = {},
-            onError = {}
-        )
+//        sampleAPI(
+//            email= "khoa@gmail.com",
+//            onSuccess = {},
+//            onError = {}
+//        )
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.framelayout, fragment!!)
         transaction.addToBackStack(null)
